@@ -1,7 +1,7 @@
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5em;
+    gap: var(--space-jump);
     margin-top: var(--space-xs);
     margin-bottom: var(--space-lg);
 }
@@ -14,4 +14,3 @@
     position: relative;
     aspect-ratio: 16/9;
 }
-

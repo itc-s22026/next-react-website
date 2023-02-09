@@ -30,7 +30,6 @@ export async function getStaticProps (context) {
   const cat = allCats.find(({ slug }) => slug === catSlug)
 
   const posts = await getAllPostsByCategory(cat.id)
-  console.log(posts)
   for (const post of posts) {
     if (!post.hasOwnProperty('eyecatch')) {
       post.eyecatch = eyecatchLocal
